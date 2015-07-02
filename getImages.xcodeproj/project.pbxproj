@@ -14,6 +14,8 @@
 		F3C416DE1B147D430026377A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C416DD1B147D430026377A /* Images.xcassets */; };
 		F3C416E11B147D430026377A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3C416DF1B147D430026377A /* LaunchScreen.xib */; };
 		F3C416ED1B147D430026377A /* getImagesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C416EC1B147D430026377A /* getImagesTests.m */; };
+		F3C416FE1B1497DE0026377A /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C416FC1B1497DE0026377A /* CustomCell.m */; };
+		F3C416FF1B1497DE0026377A /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3C416FD1B1497DE0026377A /* CustomCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		F3C416E61B147D430026377A /* getImagesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = getImagesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C416EB1B147D430026377A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3C416EC1B147D430026377A /* getImagesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = getImagesTests.m; sourceTree = "<group>"; };
+		F3C416FB1B1497DE0026377A /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		F3C416FC1B1497DE0026377A /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		F3C416FD1B1497DE0026377A /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,9 @@
 				F3C416DD1B147D430026377A /* Images.xcassets */,
 				F3C416DF1B147D430026377A /* LaunchScreen.xib */,
 				F3C416D01B147D430026377A /* Supporting Files */,
+				F3C416FB1B1497DE0026377A /* CustomCell.h */,
+				F3C416FC1B1497DE0026377A /* CustomCell.m */,
+				F3C416FD1B1497DE0026377A /* CustomCell.xib */,
 			);
 			path = getImages;
 			sourceTree = "<group>";
@@ -199,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C416FF1B1497DE0026377A /* CustomCell.xib in Resources */,
 				F3C416DC1B147D430026377A /* Main.storyboard in Resources */,
 				F3C416E11B147D430026377A /* LaunchScreen.xib in Resources */,
 				F3C416DE1B147D430026377A /* Images.xcassets in Resources */,
@@ -222,6 +231,7 @@
 				F3C416D91B147D430026377A /* ViewController.m in Sources */,
 				F3C416D61B147D430026377A /* AppDelegate.m in Sources */,
 				F3C416D31B147D430026377A /* main.m in Sources */,
+				F3C416FE1B1497DE0026377A /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +358,7 @@
 				INFOPLIST_FILE = getImages/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -358,6 +369,7 @@
 				INFOPLIST_FILE = getImages/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s arm64";
 			};
 			name = Release;
 		};
@@ -414,6 +426,7 @@
 				F3C416F21B147D430026377A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3C416F31B147D430026377A /* Build configuration list for PBXNativeTarget "getImagesTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +435,7 @@
 				F3C416F51B147D430026377A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

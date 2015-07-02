@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+@interface ViewController : UIViewController <UITableViewDelegate>
 
-@interface ViewController : UIViewController
-
+@property(nonatomic, unsafe_unretained) IBOutlet UITableView *tableView;
 
 @end
 
